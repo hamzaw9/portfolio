@@ -76,4 +76,19 @@ nav i {
   line-height: 24px;
 }
 
+.main h3 {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social-media {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 /** End: main Section **/
