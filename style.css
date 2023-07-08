@@ -224,4 +224,61 @@ p strong {
   border: 2px solid #2230d2;
   transition-duration: 0.5s;
 }
+
 /** End: main Section **/
+
+/** Start: About Section **/
+
+.about {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 27% 9.5%;
+  border-top-right-radius: 60px;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-left h2 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.about-right > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.skills li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding-right: 150px;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.get-resume-btn {
+  display: flex;
+}
+
+/** End: About Section **/
