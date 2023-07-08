@@ -4,7 +4,32 @@
   box-sizing: border-box;
 }
 
+.body {
+  font-family: Poppins, sans-serif;
+  background-color: #e5e5e5;
+}
+
 .wrapper {
-  padding: 0 7%;
-  margin: 0 auto;
+  background: #fff;
+  border-bottom-left-radius: 60px;
+  margin-bottom: 114px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+nav i {
+  color: #6070ff;
+  cursor: pointer;
 }
