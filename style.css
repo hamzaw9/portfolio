@@ -43,6 +43,7 @@ nav i {
   color: #6070ff;
   cursor: pointer;
 }
+
 /** End: main Section **/
 
 /** Start: main Section **/
@@ -76,7 +77,7 @@ nav i {
   line-height: 24px;
 }
 
-.main h3 {
+.main-section h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
