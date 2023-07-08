@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #e5e5e5;
+}
+
+.wrapper {
+  background: #fff;
+  border-bottom-left-radius: 60px;
+  margin-bottom: 114px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/** Start: main Section **/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 9%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+nav i {
+  color: #6070ff;
+  cursor: pointer;
+}
+
+/** End: main Section **/
+
+/** Start: main Section **/
+.main {
+  background: url("images/main-mbl-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  height: 100vh;
+  padding: 0 9% 9%;
+}
+
+.main-section h1 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.main-section p {
+  color: #344563;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-section h3 {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social-media {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/** End: main Section **/
