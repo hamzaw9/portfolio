@@ -146,7 +146,7 @@ Your working browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors">Hamza Baig</a>
+## 👥 Author <a name="authors">Hamza Baig</a>
 
 👤 **Author**
 
