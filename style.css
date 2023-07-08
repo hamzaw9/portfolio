@@ -70,14 +70,20 @@ nav i {
   line-height: 52px;
 }
 
-.main-section p {
+/** main-section and about section p tag have same style **/
+
+.main-section p,
+.about p {
   color: #344563;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.main-section h3 {
+/** main-section main and about section h3 tag have same style **/
+
+.main-section h3,
+.about h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -182,21 +188,12 @@ p strong {
   gap: 20px;
 }
 
-.project-details-btn {
+/** work & about section input type="button" same style **/
+
+.project-details-btn,
+.get-resume-btn {
   display: flex;
   gap: 12px;
-}
-
-fieldset button {
-  font-size: 17px;
-  color: #6070ff;
-  border: 0;
-  background-color: #fff;
-  padding: 12px 16px;
-  width: 142px;
-  border-radius: 8px;
-  font-weight: 500;
-  line-height: 24px;
 }
 
 .get-resume-btn input,
