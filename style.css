@@ -188,6 +188,18 @@ p strong {
   gap: 20px;
 }
 
+fieldset button {
+  font-size: 17px;
+  color: #6070ff;
+  border: 0;
+  background-color: #fff;
+  padding: 12px 16px;
+  width: 142px;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
 /** work & about section input type="button" same style **/
 
 .project-details-btn,
@@ -207,6 +219,19 @@ p strong {
   line-height: 24px;
   color: #396df2;
   cursor: pointer;
+}
+
+fieldset button:hover {
+  color: #fff;
+  background: #839ad3;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+fieldset button:active {
+  color: #fff;
+  background: #2230d2;
+  transition-duration: 0.4s;
 }
 
 .get-resume-btn input:hover,
@@ -282,20 +307,24 @@ p strong {
 }
 
 /** End: About Section **/
+
 /**  Start: Form Section **/
+
 .form-holder {
   background-color: #fff;
 }
+
 .form-wrapper {
   background-image: url("images/contact-form-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #6070FF;
+  background-color: #6070ff;
   display: flex;
   flex-direction: column;
-  padding: 0 24px;
+  padding: 0 9%;
   border-top-left-radius: 60px;
 }
+
 .form-description {
   display: flex;
   flex-direction: column;
@@ -303,66 +332,53 @@ p strong {
   justify-content: center;
   margin-top: 103px;
   color: #fff;
+  padding: 0 4.1%;
 }
+
 .form-description h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
 }
+
 .form-description p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
 }
+
 .form-wrapper form {
   margin-top: 52px;
   margin-bottom: 32px;
 }
+
 fieldset {
   display: flex;
   flex-direction: column;
   gap: 20px;
   border: 0;
 }
+
 .form-wrapper fieldset > *:not(:last-child) {
   background: #fff;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 15px 38px 15px 16px;
 }
+
 fieldset textarea {
   height: 140px;
 }
+
 .form-wrapper .finish-line {
   width: 134px;
   height: 5px;
   border-radius: 10px;
-  background-color: #0D151E;
+  background-color: #0d151e;
   margin-bottom: 8px;
   align-self: center;
 }
-fieldset button {
-  font-size: 17px;
-  color: #6070FF;
-  border: 0;
-  background-color: #fff;
-  padding: 12px 16px;
-  width: 142px;
-  border-radius: 8px;
-  font-weight: 500;
-  line-height: 24px;
-}
-fieldset button:hover {
-  color: #fff;
-  background: #839AD3;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-fieldset button:active {
-  color: #fff;
-  background: #2230D2;
-  transition-duration: 0.4s;
-}
-/*--- End: Form Section---*/
+
+/* --- End: Form Section--- */
