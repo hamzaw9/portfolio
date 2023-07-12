@@ -44,6 +44,10 @@ nav i {
   cursor: pointer;
 }
 
+nav ul {
+  display: none;
+}
+
 /** End: Navbar **/
 
 /** Start: main Section **/
@@ -381,4 +385,226 @@ fieldset textarea {
   align-self: center;
 }
 
-/* --- End: Form Section--- */
+/* --- End: Form Section --- */
+
+/*************     Media Queries     *************************/
+
+/** Start: Desktop Navbar **/
+
+@media only screen and (width >= 768px) {
+  .wrapper {
+    margin-bottom: 114px;
+    border-bottom-left-radius: 120px;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 25px 0;
+    display: flex;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 8px;
+  }
+
+  nav a:hover {
+    color: #6070ff;
+  }
+
+  /** End: Desktop header section **/
+
+  /** Start: Desktop Main section **/
+
+  .main {
+    background-image: url("images/main-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .main-section {
+    margin: 0 auto;
+    width: 63%;
+    padding: 260px 0;
+    gap: 12px;
+    height: auto;
+  }
+
+  .main-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    width: max-content;
+    transition: transform 2s;
+  }
+
+  .main-section p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .main-section h1 span {
+    display: block;
+  }
+
+  /** End: Desktop Main section **/
+
+  /** Start: Desktop Work section **/
+
+  .work-history {
+    grid-row-gap: 142px;
+    padding: 24px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card img {
+    max-width: 100%;
+    width: 47%;
+  }
+
+  .card-inner {
+    max-width: 100%;
+    width: 47%;
+    padding: 4.4% 0 5.4% 4.4%;
+    gap: 24px;
+  }
+
+  .card-inner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .card-inner p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-inner p.detail {
+    font-size: 16px;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /** End: Desktop Work section **/
+
+  /** Start: Desktop About section **/
+
+  .about {
+    border-top-right-radius: 120px;
+    padding: 142px 0;
+  }
+
+  .about-inner {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .about-right > ul {
+    gap: 0;
+  }
+
+  .about-left {
+    width: 48%;
+  }
+
+  .about-left .social-media {
+    margin-top: 4px;
+  }
+
+  .about-right {
+    width: 52%;
+  }
+
+  .skills-inner ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  .skills {
+    padding: 21px;
+  }
+
+  .skills-inner li {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .get-resume-btn {
+    margin-top: 12px;
+  }
+
+  /** End: Desktop About section **/
+
+  /** Start: Desktop Contact form section **/
+
+  .form-wrapper {
+    border-top-left-radius: 120px;
+    background-image: url("images/desktop-contact-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 11% 32% 9%;
+  }
+
+  .finish-line {
+    display: none;
+  }
+
+  fieldset button {
+    margin: 0 auto;
+  }
+
+  /** End: Desktop Contact form section **/
+}
