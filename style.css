@@ -535,4 +535,39 @@ fieldset textarea {
   }
 
   /** End: Desktop Work section **/
+
+  /** Start: Desktop About section **/
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 142px;
+    border-top-right-radius: 120px;
+    justify-content: flex-start;
+  }
+
+  .about-right > ul {
+    gap: 0;
+  }
+
+  .about-left {
+    flex-basis: 41%;
+  }
+
+  .about-right {
+    flex-basis: 59%;
+  }
+
+  .skills-inner ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  .skills-inner li {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  /** End: Desktop About section **/
 }
