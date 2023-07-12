@@ -440,4 +440,41 @@ fieldset textarea {
   }
 
   /** End: Desktop header section **/
+
+  /** Start: Desktop Main section **/
+
+  .main {
+    background-image: url("images/main-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .main-section {
+    margin: 0 auto;
+    width: 63%;
+    padding: 260px 0;
+    gap: 12px;
+    height: auto;
+  }
+
+  .main-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    width: max-content;
+    transition: transform 2s;
+  }
+
+  .main-section p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .main-section h1 span {
+    display: block;
+  }
+
+  /** End: Desktop Main section **/
 }
