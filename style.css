@@ -405,14 +405,11 @@ fieldset textarea {
 
   nav {
     padding: 25px 0;
+    display: flex;
   }
 
   .fa-bars {
     display: none;
-  }
-
-  nav {
-    display: flex;
   }
 
   nav ul {
@@ -579,7 +576,7 @@ fieldset textarea {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 11% 32% 9% 32%;
+    padding: 11% 32% 9%;
   }
 
   .finish-line {
