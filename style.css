@@ -44,6 +44,10 @@ nav i {
   cursor: pointer;
 }
 
+nav ul {
+  display: none;
+}
+
 /** End: Navbar **/
 
 /** Start: main Section **/
@@ -381,4 +385,59 @@ fieldset textarea {
   align-self: center;
 }
 
-/* --- End: Form Section--- */
+/* --- End: Form Section --- */
+
+/*************     Media Queries     *************************/
+
+/** Start: Desktop Navbar **/
+
+@media only screen and (width >= 768px) {
+  .wrapper {
+    margin-bottom: 114px;
+    border-bottom-left-radius: 120px;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 25px 0;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 8px;
+  }
+
+  nav a:hover {
+    color: #6070ff;
+  }
+
+  /** End: Desktop header section **/
+}
