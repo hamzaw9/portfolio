@@ -536,11 +536,18 @@ fieldset textarea {
   /** Start: Desktop About section **/
 
   .about {
+    border-top-right-radius: 120px;
+    padding: 142px 0;
+  }
+
+  .about-inner {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    padding: 142px;
-    border-top-right-radius: 120px;
     justify-content: flex-start;
+    gap: 24px;
   }
 
   .about-right > ul {
@@ -548,11 +555,15 @@ fieldset textarea {
   }
 
   .about-left {
-    flex-basis: 41%;
+    width: 48%;
+  }
+
+  .about-left .social-media {
+    margin-top: 4px;
   }
 
   .about-right {
-    flex-basis: 59%;
+    width: 52%;
   }
 
   .skills-inner ul {
@@ -560,10 +571,18 @@ fieldset textarea {
     gap: 12px;
   }
 
+  .skills {
+    padding: 21px;
+  }
+
   .skills-inner li {
     display: flex;
     flex-direction: column;
     padding: 12px;
+  }
+
+  .get-resume-btn {
+    margin-top: 12px;
   }
 
   /** End: Desktop About section **/
