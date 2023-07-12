@@ -158,7 +158,6 @@ Your working browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Desktop version**
 - [ ] **Application Deploy**
 - [ ] **Javascript Implementation**
 
