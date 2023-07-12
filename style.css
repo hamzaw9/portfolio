@@ -570,4 +570,25 @@ fieldset textarea {
   }
 
   /** End: Desktop About section **/
+
+  /** Start: Desktop Contact form section **/
+
+  .form-wrapper {
+    border-top-left-radius: 120px;
+    background-image: url("images/desktop-contact-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 11% 32% 9% 32%;
+  }
+
+  .finish-line {
+    display: none;
+  }
+
+  fieldset button {
+    margin: 0 auto;
+  }
+
+  /** End: Desktop Contact form section **/
 }
