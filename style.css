@@ -477,4 +477,62 @@ fieldset textarea {
   }
 
   /** End: Desktop Main section **/
+
+  /** Start: Desktop Work section **/
+
+  .work-history {
+    grid-row-gap: 142px;
+    padding: 24px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card img {
+    max-width: 100%;
+    width: 47%;
+  }
+
+  .card-inner {
+    max-width: 100%;
+    width: 47%;
+    padding: 4.4% 0 5.4% 4.4%;
+    gap: 24px;
+  }
+
+  .card-inner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .card-inner p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-inner p.detail {
+    font-size: 16px;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /** End: Desktop Work section **/
 }
