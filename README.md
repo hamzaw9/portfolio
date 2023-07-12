@@ -159,8 +159,8 @@ Your working browser.
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Desktop version**
-- [ ] **Contact form**
 - [ ] **Application Deploy**
+- [ ] **Javascript Implementation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
