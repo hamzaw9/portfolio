@@ -48,7 +48,7 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 - **Responsive Design**
 - **Linters Error Free**
-- **Code Quality**
+- **Animations and Transitions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -122,6 +122,11 @@ nav ul {
 
 .card img {
   width: 100%;
+  transition: transform 0.5s linear;
+}
+
+.card img:hover {
+  transform: scale(1.01);
 }
 
 .card-inner {
@@ -223,6 +228,7 @@ fieldset button {
   line-height: 24px;
   color: #396df2;
   cursor: pointer;
+  transition: color 1s, background-color 1s, padding-left 1s, padding-right 1s;
 }
 
 fieldset button:hover {
@@ -461,6 +467,10 @@ fieldset textarea {
     line-height: 60px;
     width: max-content;
     transition: transform 2s;
+  }
+
+  .main h1:hover {
+    transform: translate(200px, -8px);
   }
 
   .main-section p {
