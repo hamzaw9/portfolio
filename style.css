@@ -228,6 +228,7 @@ fieldset button {
   line-height: 24px;
   color: #396df2;
   cursor: pointer;
+  transition: color 1s, background-color 1s, padding-left 1s, padding-right 1s;
 }
 
 fieldset button:hover {
