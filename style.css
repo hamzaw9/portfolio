@@ -39,9 +39,13 @@ nav {
   text-decoration: none;
 }
 
-nav i {
+.menu {
   color: #6070ff;
   cursor: pointer;
+}
+
+.close-menu {
+  display: none;
 }
 
 nav ul {
@@ -414,7 +418,11 @@ fieldset textarea {
     display: flex;
   }
 
-  .fa-bars {
+  .menu {
+    display: none;
+  }
+
+  .close-menu {
     display: none;
   }
 
