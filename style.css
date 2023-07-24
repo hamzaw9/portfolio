@@ -94,6 +94,10 @@ nav ul {
   transition: 0.5s;
 }
 
+.nav-mbl li a:hover {
+  padding-left: 13px;
+}
+
 /** End: Mobile menu **/
 
 /** Start: main Section **/
