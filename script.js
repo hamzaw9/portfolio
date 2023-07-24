@@ -13,4 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".close-menu").style.display = "none";
     document.querySelector(".menu").style.display = "block";
   });
+  
+  document.querySelector("#portfolio").addEventListener("click", () => {
+    document.querySelector("#navbar").classList.add("nav-mbl-inactive");
+    document.querySelector("#navbar").classList.remove("nav-mbl");
+  });
+  document.querySelector("#about-section").addEventListener("click", () => {
+    document.querySelector("#navbar").classList.add("nav-mbl-inactive");
+    document.querySelector("#navbar").classList.remove("nav-mbl");
+  });
+  document.querySelector("#contact-section").addEventListener("click", () => {
+    document.querySelector("#navbar").classList.add("nav-mbl-inactive");
+    document.querySelector("#navbar").classList.remove("nav-mbl");
+  });
 });
