@@ -39,7 +39,7 @@ li a {
   text-decoration: none;
 }
 
-.menu {
+.nav-mbl-inactive i {
   color: #6070ff;
   cursor: pointer;
 }
@@ -464,12 +464,28 @@ fieldset textarea {
     display: flex;
   }
 
-  .menu {
+  .nav-mbl-inactive i {
     display: none;
   }
 
   .close-menu {
     display: none;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6070ff;
+    text-decoration: none;
+  }
+
+  .about-right > ul {
+    gap: 0;
+  }
+
+  .skills-inner ul {
+    display: flex;
+    gap: 12px;
   }
 
   #navbar ul {
@@ -479,11 +495,17 @@ fieldset textarea {
     gap: 32px;
   }
 
+  .skills-inner li {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
   #navbar li {
     list-style-type: none;
   }
 
-  #navbar a {
+  .nav-links {
     text-decoration: none;
     color: #344563;
     font-weight: 500;
@@ -492,7 +514,7 @@ fieldset textarea {
     padding: 8px;
   }
 
-  #navbar a:hover {
+  .nav-links:hover {
     color: #6070ff;
   }
 
@@ -614,10 +636,6 @@ fieldset textarea {
     gap: 24px;
   }
 
-  .about-right > ul {
-    gap: 0;
-  }
-
   .about-left {
     width: 48%;
   }
@@ -630,19 +648,8 @@ fieldset textarea {
     width: 52%;
   }
 
-  .skills-inner ul {
-    display: flex;
-    gap: 12px;
-  }
-
   .skills {
     padding: 21px;
-  }
-
-  .skills-inner li {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
   }
 
   .get-resume-btn {
