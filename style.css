@@ -62,13 +62,10 @@ nav ul {
 /** Start: Mobile menu **/
 
 .nav-mbl {
-  visibility: visible;
   background-color: #6070ff;
   width: 100%;
   position: fixed;
   height: 100%;
-  top: 0;
-  left: 0;
   mix-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
