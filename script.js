@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  updateMenuVisibility();
+
+  window.addEventListener('resize', updateMenuVisibility);
+
   document.querySelector('.menu1').addEventListener('click', () => {
     document.querySelector('#navbar').classList.add('nav-mbl-inactive');
     document.querySelector('#navbar').classList.remove('nav-mbl');
