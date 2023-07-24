@@ -458,7 +458,7 @@ fieldset textarea {
     margin: 0 auto;
   }
 
-  nav {
+  #navbar {
     padding: 25px 0;
     display: flex;
   }
@@ -471,18 +471,18 @@ fieldset textarea {
     display: none;
   }
 
-  nav ul {
+  #navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
     gap: 32px;
   }
 
-  nav li {
+  #navbar li {
     list-style-type: none;
   }
 
-  nav a {
+  #navbar a {
     text-decoration: none;
     color: #344563;
     font-weight: 500;
@@ -491,7 +491,7 @@ fieldset textarea {
     padding: 8px;
   }
 
-  nav a:hover {
+  #navbar a:hover {
     color: #6070ff;
   }
 
