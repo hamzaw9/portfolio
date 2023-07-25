@@ -209,7 +209,7 @@ p strong {
   margin: 0 5px;
 }
 
-.card-inner p.project-description {
+.card-inner p.short-description {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
