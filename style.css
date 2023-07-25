@@ -310,6 +310,25 @@ fieldset button:active {
   transition-duration: 0.5s;
 }
 
+.see-live {
+  display: none;
+}
+
+.see-source {
+  display: none;
+}
+
+.see-live img,
+.see-source img {
+  width: 20px;
+  margin-left: 4px;
+}
+
+.see-live:hover img,
+.see-source:hover img {
+  filter: grayscale(100%) brightness(1000%);
+}
+
 /** End: main Section **/
 
 /** Start: About Section **/
@@ -443,6 +462,36 @@ fieldset textarea {
 
 /* --- End: Form Section --- */
 
+/* --- Start: Popup Window --- */
+
+.popup {
+  position: fixed;
+  overflow-y: scroll;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.close-project-details {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-close-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.project-name i {
+  color: #67798e;
+}
+
+/* --- End: Popup Window --- */
+
 /*************     Media Queries     *************************/
 
 /** Start: Desktop Navbar **/
@@ -574,6 +623,7 @@ fieldset textarea {
 
   .row-reverse {
     flex-direction: row-reverse;
+    gap: 57px;
   }
 
   .card img {

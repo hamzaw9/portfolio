@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   for (let i = 0; i < projects.length; i += 1) {
     const projectsContainer = document.querySelector('#work-section');
-    // Check if the current index is odd (i.e., not divisible by 2)
+    // Check if the current index is odd
     const isOdd = i % 2 !== 0;
 
     projectsContainer.innerHTML += `<div class="card ${
@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="card-inner">
       <div class="project-name">
         <h2>${projects[i].name}</h2>
+        <i class="fa-solid fa-xmark fa-xl project-close-btn"></i>
       </div>
       <p>
         <strong>${projects[i].roles[0]}</strong>
@@ -118,10 +119,62 @@ document.addEventListener('DOMContentLoaded', () => {
           </ul>
           <div class="project-details-btn">
             <button type="button" class="see-project">See Project</button>
+            <button class="see-live">See Live</i> <img src="images/see-live.svg" alt="See Live"></button>
+            <button class="see-source">See Source</i> <img src="images/see-source.svg" alt="See Source"></img></button>
           </div>
         </div>
       </div>
     </div>
   </div>`;
+  }
+
+  /** ********    Popup Window       ********* */
+  const cards = document.querySelectorAll('.card');
+
+  for (let i = 0; i < cards.length; i += 1) {
+    const card = cards[i];
+    const seeProject = card.querySelector('.see-project');
+    const shortDescription = card.querySelector('.short-description');
+    const cardInner = card.querySelector('.card-inner');
+    const image = card.querySelector('img');
+    const descriptionContainer = card.querySelector('.description-container');
+    const projectName = card.querySelector('.project-name');
+    const projectCloseBtn = card.querySelector('.project-close-btn');
+    const seeLiveBtn = card.querySelector('.see-live');
+    const seeSourceBtn = card.querySelector('.see-source');
+
+    seeProject.addEventListener('click', () => {
+      const project = projects[i];
+
+      card.classList.add('popup');
+      seeProject.style.display = 'none';
+      projectCloseBtn.style.display = 'block';
+      shortDescription.innerHTML = project.longDescription;
+      cardInner.style.paddingRight = '0';
+      cardInner.insertBefore(image, descriptionContainer);
+
+      projectName.style.display = 'flex';
+      projectName.style.justifyContent = 'space-between';
+      projectName.style.alignItems = 'center';
+
+      seeLiveBtn.style.display = 'block';
+      seeLiveBtn.style.display = 'flex';
+      seeLiveBtn.style.alignItems = 'center';
+
+      seeSourceBtn.style.display = 'block';
+      seeSourceBtn.style.display = 'flex';
+      seeSourceBtn.style.alignItems = 'center';
+    });
+
+    projectCloseBtn.addEventListener('click', () => {
+      const project = projects[i];
+      card.classList.remove('popup');
+      seeProject.style.display = 'block';
+      projectCloseBtn.style.display = 'none';
+      shortDescription.innerHTML = project.shortDescription;
+      cardInner.insertBefore(image, projectName);
+      seeLiveBtn.style.display = 'none';
+      seeSourceBtn.style.display = 'none';
+    });
   }
 });
