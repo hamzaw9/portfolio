@@ -25,7 +25,7 @@ li a {
 
 /** Start: Navbar **/
 
-nav {
+.nav-mbl-inactive {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,9 +39,18 @@ nav {
   text-decoration: none;
 }
 
-nav i {
+.nav-mbl-inactive i {
   color: #6070ff;
   cursor: pointer;
+}
+
+.close-menu {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 32px;
+  top: 25px;
 }
 
 nav ul {
@@ -49,6 +58,47 @@ nav ul {
 }
 
 /** End: Navbar **/
+
+/** Start: Mobile menu **/
+
+.nav-mbl {
+  background-color: #6070ff;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+}
+
+.nav-mbl ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav-mbl li {
+  list-style-type: none;
+}
+
+.nav-mbl li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  transition: 0.5s;
+}
+
+.nav-mbl li a:hover {
+  padding-left: 13px;
+}
+
+/** End: Mobile menu **/
 
 /** Start: main Section **/
 .main {
@@ -154,7 +204,7 @@ p strong {
   color: #344563;
 }
 
-.fa-solid {
+.fa-circle {
   color: #7a869a;
   margin: 0 5px;
 }
@@ -409,27 +459,53 @@ fieldset textarea {
     margin: 0 auto;
   }
 
-  nav {
+  #navbar {
     padding: 25px 0;
     display: flex;
   }
 
-  .fa-bars {
+  .nav-mbl-inactive i {
     display: none;
   }
 
-  nav ul {
+  .close-menu {
+    display: none;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6070ff;
+    text-decoration: none;
+  }
+
+  .about-right > ul {
+    gap: 0;
+  }
+
+  .skills-inner ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  #navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
     gap: 32px;
   }
 
-  nav li {
+  .skills-inner li {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  #navbar li {
     list-style-type: none;
   }
 
-  nav a {
+  .nav-links {
     text-decoration: none;
     color: #344563;
     font-weight: 500;
@@ -438,7 +514,7 @@ fieldset textarea {
     padding: 8px;
   }
 
-  nav a:hover {
+  .nav-links:hover {
     color: #6070ff;
   }
 
@@ -560,10 +636,6 @@ fieldset textarea {
     gap: 24px;
   }
 
-  .about-right > ul {
-    gap: 0;
-  }
-
   .about-left {
     width: 48%;
   }
@@ -576,19 +648,8 @@ fieldset textarea {
     width: 52%;
   }
 
-  .skills-inner ul {
-    display: flex;
-    gap: 12px;
-  }
-
   .skills {
     padding: 21px;
-  }
-
-  .skills-inner li {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
   }
 
   .get-resume-btn {

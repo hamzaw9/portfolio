@@ -18,14 +18,19 @@
       <!-- Start: Navbar-->
 
       <header class="container">
-        <nav>
+        <nav id="navbar" class="nav-mbl-inactive">
           <a class="logo" href="#">My Logo</a>
+          <i class="fa-solid fa-x close-menu"></i>
           <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li>
+              <a class="nav-links menu1" href="#work-section">Portfolio</a>
+            </li>
+            <li><a class="nav-links menu2" href="#about-section">About</a></li>
+            <li>
+              <a class="nav-links menu3" href="#contact-section">Contact</a>
+            </li>
           </ul>
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars menu"></i>
         </nav>
       </header>
 
@@ -76,7 +81,7 @@
 
     <!-- Start: Work Section -->
 
-    <section class="work container">
+    <section id="work-section" class="work container">
       <div class="card">
         <img src="images/project-1.svg" alt="Project Screenshot" />
         <div class="card-inner">
@@ -320,5 +325,6 @@
     </section>
 
     <!-- End form Section -->
+    <script src="script.js"></script>
   </body>
 </html>
