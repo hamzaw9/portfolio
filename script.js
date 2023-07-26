@@ -46,4 +46,27 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.close-menu').style.display = 'none';
     updateMenuVisibility();
   });
+
+  /** ****    Form Validation       ***** */
+  const form = document.querySelector("#form");
+  const formSubmit = form.querySelector(".form-submit");
+  const email = form.querySelector("#email");
+  const showError = form.querySelector("span");
+  function emailLowerCase() {
+    const emailValue = email.value;
+    if (emailValue.toLowerCase() === emailValue) {
+      showError.innerText = "";
+    } else {
+      showError.style.display = "block";
+      showError.classList.add("error");
+      showError.innerText = "Email should be in lowercase";
+      return false;
+    }
+  }
+  formSubmit.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (emailLowerCase()) {
+      form.submit();
+    }
+  });
 });
