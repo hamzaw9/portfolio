@@ -56,9 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailValue = email.value;
     if (emailValue.toLowerCase() === emailValue) {
       showError.innerText = "";
+      return true;
     } else {
       showError.classList.add("error");
-      showError.innerText = "Email should be in lowercase";
+      showError.innerText =
+        "Email should be in lowercase. You need to type like this " +
+        emailValue.toLowerCase();
       return false;
     }
   }
