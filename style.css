@@ -420,6 +420,7 @@ fieldset {
   gap: 20px;
   border: 0;
 }
+
 .form-wrapper fieldset > *:not(:last-child):not(:nth-last-child(2)) {
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -444,7 +445,7 @@ fieldset textarea {
 
 /* --- Start: Form Validation --- */
 .error {
-  color: #ffffff;
+  color: #fff;
   background-color: #e57373;
   border: 2px solid #b71c1c;
   font-size: 16px;
