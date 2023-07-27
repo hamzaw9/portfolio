@@ -76,22 +76,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /** ****    Data Storage in Browser       ***** */
 
-  name.addEventListener("input", updateFormData);
-  email.addEventListener("input", updateFormData);
-  message.addEventListener("input", updateFormData);
-
-  function updateFormData() {
-    const nameValue = name.value;
-    const emailValue = email.value;
-    const messageValue = message.value;
-    const formData = {
-      name: nameValue,
-      email: emailValue,
-      message: messageValue,
-    };
-
-    const jsonFormData = JSON.stringify(formData);
-    console.log(jsonFormData);
-    localStorage.setItem("userData", jsonFormData);
-  }
+  
 });
