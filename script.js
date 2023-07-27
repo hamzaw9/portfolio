@@ -76,5 +76,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /** ****    Data Storage in Browser       ***** */
 
-  
+  const storedData = localStorage.getItem("userData");
+  const convertStoredData = storedData ? JSON.parse(storedData) : {};
+  if (convertStoredData) {
+    name.value = convertStoredData.name || "";
+    email.value = convertStoredData.email || "";
+    message.value = convertStoredData.message || "";
+  }
+  function updateFormData() {
+    const nameValue = name.value;
+    const emailValue = email.value;
+    const messageValue = message.value;
+    const formData = {
+      name: nameValue,
+      email: emailValue,
+      message: messageValue,
+    };
+    const jsonFormData = JSON.stringify(formData);
+    localStorage.setItem("userData", jsonFormData);
+  }
+  name.addEventListener("input", updateFormData);
+  email.addEventListener("input", updateFormData);
+  message.addEventListener("input", updateFormData);
 });
