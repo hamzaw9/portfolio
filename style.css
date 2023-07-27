@@ -421,7 +421,7 @@ fieldset {
   border: 0;
 }
 
-.form-wrapper fieldset > *:not(:last-child):not(:nth-last-child(2)) {
+.form-wrapper fieldset > *:not(:last-child, :nth-last-child(2)) {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -454,7 +454,7 @@ fieldset textarea {
   border-radius: 6px;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 }
 
 /* --- End: Form Validation --- */

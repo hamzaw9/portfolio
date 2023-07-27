@@ -50,8 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
   /** ****    Form Validation       ***** */
   const form = document.querySelector('#form');
   const formSubmit = form.querySelector('.form-submit');
+  const name = form.querySelector('#name');
   const email = form.querySelector('#email');
+  const message = form.querySelector('#message');
   const showError = form.querySelector('span');
+
   function emailLowerCase() {
     const emailValue = email.value;
     if (emailValue.toLowerCase() === emailValue) {
@@ -59,14 +62,40 @@ document.addEventListener('DOMContentLoaded', () => {
       return true;
     }
     showError.classList.add('error');
-    showError.innerText = `Email should be in lowercase. You need to type like this ${
-      emailValue.toLowerCase()}`;
+    showError.innerText = `Email should be in lowercase. You need to type like this ${emailValue.toLowerCase()}`;
     return false;
   }
+
   formSubmit.addEventListener('click', (event) => {
     event.preventDefault();
+
     if (emailLowerCase()) {
       form.submit();
     }
   });
+
+  /** ****    Data Storage in Browser       ***** */
+
+  const storedData = localStorage.getItem('userData');
+  const convertStoredData = storedData ? JSON.parse(storedData) : {};
+  if (convertStoredData) {
+    name.value = convertStoredData.name || '';
+    email.value = convertStoredData.email || '';
+    message.value = convertStoredData.message || '';
+  }
+  function updateFormData() {
+    const nameValue = name.value;
+    const emailValue = email.value;
+    const messageValue = message.value;
+    const formData = {
+      name: nameValue,
+      email: emailValue,
+      message: messageValue,
+    };
+    const jsonFormData = JSON.stringify(formData);
+    localStorage.setItem('userData', jsonFormData);
+  }
+  name.addEventListener('input', updateFormData);
+  email.addEventListener('input', updateFormData);
+  message.addEventListener('input', updateFormData);
 });
