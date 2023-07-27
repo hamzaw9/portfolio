@@ -46,4 +46,27 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.close-menu').style.display = 'none';
     updateMenuVisibility();
   });
+
+  /** ****    Form Validation       ***** */
+  const form = document.querySelector('#form');
+  const formSubmit = form.querySelector('.form-submit');
+  const email = form.querySelector('#email');
+  const showError = form.querySelector('span');
+  function emailLowerCase() {
+    const emailValue = email.value;
+    if (emailValue.toLowerCase() === emailValue) {
+      showError.innerText = '';
+      return true;
+    }
+    showError.classList.add('error');
+    showError.innerText = `Email should be in lowercase. You need to type like this ${
+      emailValue.toLowerCase()}`;
+    return false;
+  }
+  formSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (emailLowerCase()) {
+      form.submit();
+    }
+  });
 });
