@@ -175,6 +175,12 @@ nav ul {
   transition: transform 0.5s linear;
 }
 
+.see-live img,
+.see-source img {
+  width: 20px;
+  margin-left: 4px;
+}
+
 .card img:hover {
   transform: scale(1.01);
 }
@@ -318,12 +324,6 @@ fieldset button:active {
   display: none;
 }
 
-.see-live img,
-.see-source img {
-  width: 20px;
-  margin-left: 4px;
-}
-
 .see-live:hover img,
 .see-source:hover img {
   filter: grayscale(100%) brightness(1000%);
@@ -465,6 +465,7 @@ fieldset textarea {
 /* --- Start: Popup Window --- */
 
 .popup {
+  z-index: 1;
   position: fixed;
   overflow-y: scroll;
   top: 50%;
@@ -488,6 +489,10 @@ fieldset textarea {
 
 .project-name i {
   color: #67798e;
+}
+
+.blur {
+  filter: blur(5px);
 }
 
 /* --- End: Popup Window --- */
@@ -626,7 +631,7 @@ fieldset textarea {
     gap: 57px;
   }
 
-  .card img {
+  .card > img:first-child {
     max-width: 100%;
     width: 47%;
   }
@@ -728,4 +733,26 @@ fieldset textarea {
   }
 
   /** End: Desktop Contact form section **/
+
+  /** Desktop Popup **/
+
+  .descriptionContainerPopup {
+    flex-direction: row;
+  }
+
+  .cardInnerPopup {
+    width: 100%;
+  }
+
+  .imagePopup {
+    width: 80vw;
+  }
+
+  .tagContainerPopup {
+    width: 30%;
+  }
+
+  .shortDescriptionPopup {
+    width: 70%;
+  }
 }

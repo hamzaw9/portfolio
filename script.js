@@ -138,10 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardInner = card.querySelector('.card-inner');
     const image = card.querySelector('img');
     const descriptionContainer = card.querySelector('.description-container');
+    const tagContainer = card.querySelector('.tag-container');
     const projectName = card.querySelector('.project-name');
     const projectCloseBtn = card.querySelector('.project-close-btn');
     const seeLiveBtn = card.querySelector('.see-live');
     const seeSourceBtn = card.querySelector('.see-source');
+    const wrapper = document.querySelector('.wrapper');
+    const aboutSection = document.querySelector('#about-section');
+    const contactSection = document.querySelector('#contact-section');
 
     seeProject.addEventListener('click', () => {
       const project = projects[i];
@@ -164,6 +168,27 @@ document.addEventListener('DOMContentLoaded', () => {
       seeSourceBtn.style.display = 'block';
       seeSourceBtn.style.display = 'flex';
       seeSourceBtn.style.alignItems = 'center';
+
+      /** Blur * */
+
+      wrapper.classList.add('blur');
+      aboutSection.classList.add('blur');
+      contactSection.classList.add('blur');
+
+      cards.forEach((element) => {
+        if (!element.getAttribute('class').includes('popup')) {
+          element.classList.add('blur');
+        }
+      });
+
+      /** Desktop Popup * */
+      if (window.innerWidth >= 768) {
+        descriptionContainer.classList.add('descriptionContainerPopup');
+        cardInner.classList.add('cardInnerPopup');
+        image.classList.add('imagePopup');
+        tagContainer.classList.add('tagContainerPopup');
+        shortDescription.classList.add('shortDescriptionPopup');
+      }
     });
 
     projectCloseBtn.addEventListener('click', () => {
@@ -172,9 +197,27 @@ document.addEventListener('DOMContentLoaded', () => {
       seeProject.style.display = 'block';
       projectCloseBtn.style.display = 'none';
       shortDescription.innerHTML = project.shortDescription;
-      cardInner.insertBefore(image, projectName);
+      card.insertBefore(image, cardInner);
       seeLiveBtn.style.display = 'none';
       seeSourceBtn.style.display = 'none';
+
+      /** Desktop Popup * */
+
+      descriptionContainer.classList.remove('descriptionContainerPopup');
+      cardInner.classList.remove('cardInnerPopup');
+      image.classList.remove('imagePopup');
+      tagContainer.classList.remove('tagContainerPopup');
+      shortDescription.classList.remove('shortDescriptionPopup');
+
+      /** Blur * */
+
+      wrapper.classList.remove('blur');
+      aboutSection.classList.remove('blur');
+      contactSection.classList.remove('blur');
+
+      cards.forEach((element) => {
+        element.classList.remove('blur');
+      });
     });
   }
 });
