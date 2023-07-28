@@ -497,6 +497,22 @@ fieldset textarea {
 
 /* --- End: Popup Window --- */
 
+/* --- Start: Form Validation --- */
+.error {
+  color: #fff;
+  background-color: #e57373;
+  border: 2px solid #b71c1c;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- End: Form Validation --- */
+
 /*************     Media Queries     *************************/
 
 /** Start: Desktop Navbar **/
