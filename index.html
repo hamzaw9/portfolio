@@ -209,28 +209,32 @@
             to help with it!
           </p>
         </div>
-        <form action="https://formspree.io/f/xvojowwl" method="post">
+        <form id="form" action="https://formspree.io/f/xvojowwl" method="post">
           <fieldset>
             <input
+              id="name"
               type="text"
-              name="user_name"
-              placeholder="Lorem Ipsum"
+              name="name"
+              placeholder="Type your full name"
               maxlength="30"
               required
             />
             <input
+              id="email"
               type="email"
               name="email"
               placeholder="example@example.com"
               required
             />
             <textarea
+              id="message"
               maxlength="500"
               name="message"
               placeholder="Write your message here..."
               required
             ></textarea>
-            <button type="submit">Get in touch</button>
+            <span></span>
+            <button class="form-submit" type="submit">Get in touch</button>
           </fieldset>
         </form>
         <div class="finish-line"></div>
@@ -238,6 +242,7 @@
     </section>
 
     <!-- End form Section -->
+
     <script src="script.js"></script>
   </body>
 </html>
