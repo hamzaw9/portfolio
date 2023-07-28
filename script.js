@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuItems.forEach((item) => {
     item.addEventListener('click', closeMobileMenu);
   });
-  
+
   /** ********    Dynamic Cards       ********* */
 
   const projects = [
