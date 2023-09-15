@@ -158,14 +158,7 @@ Your working browser.
 
 - GitHub: [@hamzabaig](https://github.com/hamzaw9)
 - Twitter: [@hamzabaig](https://twitter.com/hamzabaig059)
-- LinkedIn: [@hamzabaig](https://www.linkedin.com/in/hamza-baig-852058269/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Application Deploy**
-- [ ] **Javascript Implementation**
+- LinkedIn: [@hamzabaig](https://www.linkedin.com/in/hamzabaig-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
