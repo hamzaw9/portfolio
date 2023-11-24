@@ -157,7 +157,6 @@ Your working browser.
 👤 **Author**
 
 - GitHub: [@hamzabaig](https://github.com/hamzaw9)
-- Twitter: [@hamzabaig](https://twitter.com/hamzabaig059)
 - LinkedIn: [@hamzabaig](https://www.linkedin.com/in/hamzabaig-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
